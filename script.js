@@ -55,31 +55,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 500 + index * 100);
   });
 });
-
-tsParticles.load('tsparticles', {
-  fullScreen: { enable: true, zIndex: -1 },
-  particles: {
-    number: { value: 80, density: { enable: true, value_area: 800 } },
-    color: { value: "#ff0000" },
-    shape: { type: "circle" },
-    opacity: { value: 0.5 },
-    size: { value: 3, random: true },
-    move: {
-      enable: true,
-      speed: 2,
-      direction: "none",
-      random: true,
-      straight: false,
-      outMode: "out"
-    }
-  },
-  interactivity: {
-    detectsOn: "canvas",
-    events: {
-      onHover: { enable: true, mode: "repulse", parallax: { enable: true, force: 60 } },
-      onClick: { enable: true, mode: "push" }
-    },
-    modes: { repulse: { distance: 200, duration: 0.4 } }
-  },
-  retinaDetect: true
-});
